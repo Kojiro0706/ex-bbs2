@@ -21,6 +21,7 @@ public class showBbsController {
 	public String showBbs(Model model) {
 		List<Article> articleList = articleRepository.findAll();
 		model.addAttribute("articleList", articleList);
+		
 		return "show-bbs";
 	}
 }
