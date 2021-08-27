@@ -14,8 +14,16 @@
 		コメント者名:
 		<span th:text="${comment.name}"></span>
 		コメント内容:
-		<span th:text="${comment.comtent}"></span>
+		<span th:text="${comment.content}"></span>
 	</div>
+	<form th:action="@{/insert-comment}" method="post">
+		名前:<br>
+		<input type="text" name="name"><br>
+		コメント:<br>
+		<textarea rows="5" cols="50" name="content"></textarea><br>
+		<input type="hidden" name="articleId" th:value="${article.id}">
+		<button>コメント投稿</button>
+	</form>
 </div>
 </body>
 </html>
