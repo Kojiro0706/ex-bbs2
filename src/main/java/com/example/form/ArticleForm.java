@@ -1,6 +1,6 @@
 package com.example.form;
 
-public class AritcleForm {
+public class ArticleForm {
 	/** 名前 */
 	private String name;
 	/** コンテント */

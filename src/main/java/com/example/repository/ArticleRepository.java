@@ -14,7 +14,7 @@ import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import com.example.domain.Article;
 import com.example.domain.Comment;
 
-public class AricleRepository {
+public class ArticleRepository {
 	@Autowired
 	private NamedParameterJdbcTemplate template;
 
