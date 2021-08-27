@@ -15,12 +15,12 @@ import com.example.repository.ArticleRepository;
 public class showBbsController {
 
 	@Autowired
-	private ArticleRepository aricleRepository;
+	private ArticleRepository articleRepository;
 	
 	@RequestMapping("")
 	public String showBbs(Model model) {
-		List<Article> articleList = aricleRepository.findAll();
+		List<Article> articleList = articleRepository.findAll();
 		model.addAttribute("articleList", articleList);
-		return "showBbs";
+		return "show-bbs";
 	}
 }
